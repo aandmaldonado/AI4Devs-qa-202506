@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Container, Row, Offcanvas, Button } from 'react-bootstrap';
+import { Container, Row, Offcanvas, Button, Col } from 'react-bootstrap';
 import { DragDropContext } from 'react-beautiful-dnd';
 import StageColumn from './StageColumn';
 import CandidateDetails from './CandidateDetails';
@@ -84,15 +84,21 @@ const PositionsDetails = () => {
             return;
         }
 
-        const sourceStage = stages[source.droppableId];
-        const destStage = stages[destination.droppableId];
+        // Encontrar las etapas por ID en lugar de por índice
+        const sourceStage = stages.find(stage => stage.id.toString() === source.droppableId);
+        const destStage = stages.find(stage => stage.id.toString() === destination.droppableId);
+
+        if (!sourceStage || !destStage) {
+            console.error('Stage not found:', { source: source.droppableId, destination: destination.droppableId });
+            return;
+        }
 
         const [movedCandidate] = sourceStage.candidates.splice(source.index, 1);
         destStage.candidates.splice(destination.index, 0, movedCandidate);
 
         setStages([...stages]);
 
-        const destStageId = stages[destination.droppableId].id;
+        const destStageId = destStage.id;
 
         updateCandidateStep(movedCandidate.id, movedCandidate.applicationId, destStageId);
     };
@@ -107,18 +113,30 @@ const PositionsDetails = () => {
 
     return (
         <Container className="mt-5">
-            <Button variant="link" onClick={() => navigate('/positions')} className="mb-3">
-                Volver a Posiciones
+            <Button variant="link" onClick={() => navigate('/')} className="mb-3" data-testid="back-to-positions-btn">
+                Volver al Dashboard
             </Button>
-            <h2 className="text-center mb-4">{positionName}</h2>
+            <h2 data-testid="position-title" className="text-center mb-4">{positionName}</h2>
             <DragDropContext onDragEnd={onDragEnd}>
                 <Row>
                     {stages.map((stage, index) => (
-                        <StageColumn key={index} stage={stage} index={index} onCardClick={handleCardClick} />
+                        <Col key={stage.id} md={3}>
+                            <StageColumn
+                                key={stage.id}
+                                stage={stage}
+                                onCardClick={handleCardClick}
+                                data-testid={`stage-${index}`}
+                            />
+                        </Col>
                     ))}
                 </Row>
             </DragDropContext>
-            <CandidateDetails candidate={selectedCandidate} onClose={closeSlide} />
+            {selectedCandidate && (
+                <CandidateDetails
+                    candidate={selectedCandidate}
+                    onClose={() => setSelectedCandidate(null)}
+                />
+            )}
         </Container>
     );
 };

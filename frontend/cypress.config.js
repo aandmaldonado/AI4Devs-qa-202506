@@ -14,6 +14,14 @@ module.exports = defineConfig({
     requestTimeout: 10000,
     responseTimeout: 10000,
     pageLoadTimeout: 30000,
+    // Configuración mejorada para video y captura
+    videoCompression: 32,
+    videoQuality: 'high',
+    screenshotOnRunFailure: true,
+    trashAssetsBeforeRuns: false,
+    // Configuración para mejor renderizado
+    chromeWebSecurity: false,
+    experimentalModifyObstructiveThirdPartyCode: true,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },

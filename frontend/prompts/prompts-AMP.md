@@ -7,13 +7,11 @@
 
 ## Categorías 🏷️
 
-**Nota:** Los emojis de las categorías pueden variar según el proyecto. Cada categoría debe tener un emoji único que represente su propósito.
-
 ### **Análisis de Requisitos** 🔍
-Prompts relacionados con la comprensión y análisis de requisitos del proyecto, incluyendo ingeniería inversa y extracción de historias de usuario]
+Prompts relacionados con la comprensión y análisis de requisitos del proyecto, incluyendo ingeniería inversa y extracción de historias de usuario
 
 ### **Especificaciones BDD** 🧪
-Prompts para la creación de especificaciones de comportamiento usando enfoque BDD y lenguaje Gherkin]
+Prompts para la creación de especificaciones de comportamiento usando enfoque BDD y lenguaje Gherkin
 
 ### **Planificación de Testing** 🚀
 Prompts para la planificación e implementación de estrategias de testing, incluyendo frameworks como Cypress
@@ -22,42 +20,36 @@ Prompts para la planificación e implementación de estrategias de testing, incl
 Prompts para la ejecución de pruebas, generación de reportes de cobertura y análisis de calidad del sistema
 
 ### **Documentación Técnica** 📋
-Prompts para la creación y mantenimiento de documentación técnica del proyecto]
+Prompts para la creación y mantenimiento de documentación técnica del proyecto
 
 ### **Gestión de Proyectos** 📊
-Prompts relacionados con la gestión y planificación de proyectos de desarrollo]
+Prompts relacionados con la gestión y planificación de proyectos de desarrollo
 
 ### **Arquitectura y Diseño** 🏗️
-Prompts para el diseño de arquitectura de software y patrones de diseño]
-
-**Nota:** Pueden existir más o menos categorías según las necesidades del proyecto. Cada una debe tener un emoji único.
+Prompts para el diseño de arquitectura de software y patrones de diseño
 
 ## Estadísticas 📊
 
 ### **Resumen General**
-- **Total de Prompts:** 5
-- **Prompts de Análisis de Requisitos:** 1
+- **Total de Prompts:** 10
+- **Prompts de Análisis de Requisitos:** 5
 - **Prompts de Especificaciones BDD:** 1
 - **Prompts de Planificación de Testing:** 1
-- **Prompts de Implementación de Testing:** 1
-- **Prompts de Ejecución y Reportes:** 1
+- **Prompts de Implementación de Testing:** 3
+- **Prompts de Ejecución y Reportes:** 2
 - **Prompts de Documentación Técnica:** 0
-
-**Nota:** El número de categorías y prompts puede variar según el proyecto. Ajustar según sea necesario.
 
 ### **Prompts por Categoría**
 
 | Categoría | Cantidad | Porcentaje |
 |-----------|----------|------------|
-| 🔍 Análisis de Requisitos | 1 | 20.0% |
-| 🧪 Especificaciones BDD | 1 | 20.0% |
-| 🚀 Planificación de Testing | 1 | 20.0% |
-| 🧪 Implementación de Testing | 1 | 20.0% |
-| 📊 Ejecución y Reportes | 1 | 20.0% |
+| 🔍 Análisis de Requisitos | 5 | 50.0% |
+| 🧪 Especificaciones BDD | 1 | 10.0% |
+| 🚀 Planificación de Testing | 1 | 10.0% |
+| 🧪 Implementación de Testing | 3 | 30.0% |
+| 📊 Ejecución y Reportes | 2 | 20.0% |
 | 📋 Documentación Técnica | 0 | 0.0% |
 | 📊 Gestión de Proyectos | 0 | 0.0% |
-
-**Nota:** Ajustar el número de filas según la cantidad de categorías del proyecto.
 
 ### **Roles Utilizados**
 
@@ -66,8 +58,6 @@ Prompts para el diseño de arquitectura de software y patrones de diseño]
 | **Product Owner** | 1 | Rol para análisis de requisitos y extracción de historias de usuario |
 | **Analista de Sistemas** | 1 | Rol para especificaciones BDD y comportamiento del sistema |
 | **Desarrollador Fullstack Senior** | 2 | Rol para planificación e implementación técnica de testing |
-
-**Nota:** Ajustar el número de filas según los roles identificados en el proyecto.
 
 ### **Problemas Más Frecuentes**
 
@@ -79,8 +69,6 @@ Prompts para el diseño de arquitectura de software y patrones de diseño]
 | Implementación técnica de Cypress | 1 | 🧪 Implementación de Testing |
 | Necesidad de validación y reportes de pruebas | 1 | 📊 Ejecución y Reportes |
 
-**Nota:** Ajustar el número de filas según los problemas identificados en el proyecto.
-
 ### **Prompts Más Críticos**
 
 | Prompt | Impacto | Razón |
@@ -90,6 +78,11 @@ Prompts para el diseño de arquitectura de software y patrones de diseño]
 | Prompt 3 | 🔴 Alto | Planifica la implementación de testing E2E crítico para la calidad |
 | Prompt 4 | 🔴 Alto | Implementa las pruebas E2E según los requisitos del ejercicio |
 | Prompt 5 | 🔴 Alto | Valida la implementación y genera reportes de calidad del sistema |
+| Prompt 6 | 🔴 Alto | Identifica gaps críticos en la cobertura de pruebas E2E |
+| Prompt 7 | 🔴 Alto | Implementa mejoras críticas para completar la cobertura de pruebas E2E |
+| Prompt 8 | 🔴 Alto | Corrige error crítico de funcionalidad drag and drop para movimiento de candidatos |
+| Prompt 9 | 🔴 Alto | Verifica cobertura de pruebas de pantalla de detalles de posiciones |
+| Prompt 10 | 🔴 Alto | Identifica problema de navegación a pantalla de detalles |
 
 ## Prompts de usuario 📝👤
 
@@ -108,8 +101,6 @@ Especificaciones BDD completas usando lenguaje Gherkin para todas las funcionali
 Plan de trabajo detallado para implementar Cypress y crear pruebas E2E para la interfaz de posiciones. Incluye 6 fases de implementación, cronograma, herramientas y métricas de éxito
 
 ***Estos archivos no fueron versionados ya que no es el scope del ejercicio.***
-
-**Nota:** El número de prompts puede variar según el proyecto. Cada prompt debe incluir las categorías relevantes (máximo 3) y una descripción clara del contexto y solicitud.
 
 ### **Prompt 1:** `🔍 Análisis de Requisitos` `📋 Documentación Técnica`
 Eres un experimentado Product Owner.
@@ -188,7 +179,33 @@ antes de realizar cualquier cosa, primero entregame el plan de trabajo detallado
 realiza la solicitud descrita en @init.md siguiendo el plan detallado en @plan-trabajo-cypress.md
 
 ### **Prompt 5:** `📊 Ejecución y Reportes` `🧪 Implementación de Testing`
-ejecuta las pruebas y genera un reporte de cobertura con un detalle analizado de casos de exito, fallos y posibles mejoras 
+ejecuta las pruebas y genera un reporte de cobertura con un detalle analizado de casos de exito, fallos y posibles mejoras
+
+### **Prompt 6:** `🔍 Análisis de Requisitos` `📊 Ejecución y Reportes`
+no veo pruebas ni evidencia del detalle del proceso, que se muestra al presionar "ver proceso" y muestre el tablero kanban. recuerda los escenarios descritos en @init.md, dame un reporte antes de tocar el frontend
+
+### **Prompt 7:** `🧪 Implementación de Testing` `🔍 Análisis de Requisitos`
+ejecuta las mejoras, solo los puntos del 1 al 4, no ejecutes nada aun
+
+agrega este prompt a @prompts-AMP.md y actualiza las secciones necesarias
+
+### **Prompt 8:** `🧪 Implementación de Testing` `🔍 Análisis de Requisitos`
+Al arrastrar las tarjetas de los candidatos entre las columnas de etapas, el sistema arroja un error de runtime:
+
+```
+Uncaught runtime errors:
+×
+ERROR
+Cannot read properties of undefined (reading 'candidates')
+TypeError: Cannot read properties of undefined (reading 'candidates')
+    at onDragEnd (http://localhost:3000/static/js/bundle.js:99626:15)
+```
+
+### **Prompt 9:** `🔍 Análisis de Requisitos` `📊 Ejecución y Reportes`
+en los videos sigo sin ver esta pantalla @Image, verifica q se haya probado e indicame en donde puedo revisar los test asociados
+
+### **Prompt 10:** `🔍 Análisis de Requisitos` `📊 Ejecución y Reportes`
+en el video siempre veo esta url http://localhost:3000/positions y no esta http://localhost:3000/positions/1 por ejemplo donde se ve el detalle
 
 ## Conclusiones 🏁
 
@@ -197,8 +214,6 @@ ejecuta las pruebas y genera un reporte de cobertura con un detalle analizado de
 El proyecto LTI-ATS ha seguido un proceso de desarrollo estructurado que comenzó con el análisis de requisitos mediante ingeniería inversa del código existente, continuó con la creación de especificaciones BDD para facilitar la comunicación entre equipos técnicos y de negocio, siguió con la planificación detallada de la implementación de pruebas E2E usando Cypress, y culminó con la implementación completa de las pruebas siguiendo las mejores prácticas de testing.
 
 ### **Puntos Clave del Proceso**
-
-**Nota:** El número de fases puede variar según el proyecto. Cada fase debe representar un período o enfoque específico del desarrollo.
 
 #### **1. Análisis de Requisitos (Prompts 1)**
 Primera fase del proyecto enfocada en la comprensión profunda del sistema existente mediante ingeniería inversa. Se extrajeron 10 historias de usuario completas con criterios de aceptación, tareas y priorización, estableciendo la base para todo el desarrollo posterior]
@@ -215,7 +230,20 @@ Cuarta fase del proyecto dedicada a la implementación técnica completa de Cypr
 #### **5. Ejecución y Validación (Prompts 5)**
 Quinta fase del proyecto enfocada en la validación de la implementación mediante la ejecución de todas las pruebas y la generación de reportes detallados de cobertura, rendimiento y calidad del sistema de testing implementado
 
-**Nota:** Continuar agregando fases según sea necesario. Cada fase debe tener un número secuencial y describir un período específico del desarrollo.
+#### **6. Análisis de Gaps y Mejoras (Prompts 6)**
+Sexta fase del proyecto dedicada a la identificación de gaps críticos en la cobertura de pruebas E2E, especialmente en navegación al proceso de contratación y validación del tablero Kanban, generando recomendaciones específicas de mejora
+
+#### **7. Implementación de Mejoras Críticas (Prompts 7)**
+Séptima fase del proyecto enfocada en la implementación de las mejoras identificadas para completar la cobertura de pruebas E2E, incluyendo navegación al proceso, validación del tablero Kanban y flujo completo end-to-end
+
+#### **8. Corrección de Funcionalidad Drag and Drop (Prompts 8)**
+Octava fase del proyecto dedicada a la corrección del error crítico en la funcionalidad de arrastrar y soltar candidatos entre etapas del proceso de contratación, asegurando que el movimiento de candidatos funcione correctamente
+
+#### **9. Verificación de Cobertura de Pantalla de Detalles (Prompts 9)**
+Novena fase del proyecto enfocada en la verificación de que las pruebas E2E cubran correctamente la pantalla de detalles de posiciones y el tablero Kanban, asegurando que se valide la funcionalidad completa del proceso de contratación
+
+#### **10. Identificación de Problema de Navegación (Prompts 10)**
+Décima fase del proyecto dedicada a la identificación y documentación del problema crítico de navegación a la pantalla de detalles de posiciones, donde las pruebas no estaban llegando a la URL `/positions/:id` correctamente
 
 ### **Lecciones Aprendidas**
 
@@ -230,7 +258,7 @@ La documentación estructurada y la planificación detallada son esenciales para
 
 ### **Resultado Final**
 
-El proyecto ha generado una implementación completa de pruebas E2E con Cypress que incluye: 10 historias de usuario estructuradas, especificaciones BDD detalladas para 8 features principales, un plan de trabajo técnico completo, una implementación funcional con Page Objects, comandos personalizados, fixtures de datos y 30 casos de prueba que cubren todos los requisitos del ejercicio, y validación completa mediante ejecución exitosa con reportes detallados de cobertura y calidad. Esta implementación proporciona una base sólida para el testing continuo y la calidad del sistema LTI-ATS.
+El proyecto ha generado una implementación completa de pruebas E2E con Cypress que incluye: 10 historias de usuario estructuradas, especificaciones BDD detalladas para 8 features principales, un plan de trabajo técnico completo, una implementación funcional con Page Objects, comandos personalizados, fixtures de datos y 34 casos de prueba que cubren todos los requisitos del ejercicio, y validación completa mediante ejecución exitosa con reportes detallados de cobertura y calidad. Se identificaron y corrigieron gaps críticos en la cobertura de navegación al proceso de contratación, validación del tablero Kanban, funcionalidad de drag and drop, y navegación a la pantalla de detalles. La implementación ahora proporciona una base sólida y completamente funcional para el testing continuo y la calidad del sistema LTI-ATS.
 
 ### **Recomendaciones para Futuros Proyectos**
 
@@ -243,5 +271,4 @@ El proyecto ha generado una implementación completa de pruebas E2E con Cypress 
 7. **Validación Continua** [Revisar y actualizar la documentación según evoluciona el proyecto]
 8. **Ejecución y Reportes** [Implementar ejecución automática y generación de reportes de calidad]
 9. **Monitoreo de Rendimiento** [Establecer métricas continuas de rendimiento y estabilidad de pruebas]
-
-**Nota:** Ajustar el número de recomendaciones según sea necesario.
+10. **Validación de Gaps** [Identificar y documentar gaps críticos en la cobertura de pruebas antes de considerar la implementación completa]

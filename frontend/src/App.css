@@ -36,3 +36,69 @@
     transform: rotate(360deg);
   }
 }
+
+/* Estilos para el pipeline de reclutamiento */
+.stage-column {
+    min-height: 400px;
+}
+
+.stage-column .card {
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.stage-column .card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.stage-column .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #007bff;
+    color: #495057;
+    font-weight: 600;
+}
+
+.stage-column .card-body {
+    background-color: #ffffff;
+    min-height: 200px;
+}
+
+/* Estilos para las tarjetas de candidatos */
+.candidate-card {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 8px;
+}
+
+.candidate-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.candidate-card .card-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #212529;
+}
+
+.candidate-card .rating-dots {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+
+.candidate-card .rating-dots span {
+    font-size: 8px;
+    line-height: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stage-column {
+        min-height: 300px;
+        margin-bottom: 20px;
+    }
+}

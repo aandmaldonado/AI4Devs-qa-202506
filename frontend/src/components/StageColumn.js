@@ -1,15 +1,15 @@
 import React from 'react';
-import { Col, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { Droppable } from 'react-beautiful-dnd';
 import CandidateCard from './CandidateCard';
 
-const StageColumn = ({ stage, index, onCardClick }) => (
-    <Col md={3}>
-        <Droppable droppableId={`${index}`}>
+const StageColumn = ({ stage, onCardClick, ...props }) => (
+    <div className="stage-column">
+        <Droppable droppableId={stage.id.toString()}>
             {(provided) => (
-                <Card className="mb-4" ref={provided.innerRef} {...provided.droppableProps}>
-                    <Card.Header className="text-center">{stage.title}</Card.Header>
-                    <Card.Body>
+                <Card className="mb-4 h-100" ref={provided.innerRef} {...provided.droppableProps} {...props}>
+                    <Card.Header className="text-center fw-bold">{stage.title}</Card.Header>
+                    <Card.Body className="d-flex flex-column">
                         {stage.candidates.map((candidate, idx) => (
                             <CandidateCard key={candidate.id} candidate={candidate} index={idx} onClick={onCardClick} />
                         ))}
@@ -18,7 +18,7 @@ const StageColumn = ({ stage, index, onCardClick }) => (
                 </Card>
             )}
         </Droppable>
-    </Col>
+    </div>
 );
 
 export default StageColumn;

@@ -45,19 +45,19 @@ const Positions: React.FC = () => {
 
     return (
         <Container className="mt-5">
-            <Button variant="link" onClick={() => navigate('/')} className="mb-3">
+            <Button variant="link" onClick={() => navigate('/')} className="mb-3" data-testid="back-to-dashboard-btn">
                 Volver al Dashboard
             </Button>
-            <h2 className="text-center mb-4">Posiciones</h2>
+            <h2 className="text-center mb-4" data-testid="page-title">Posiciones</h2>
             <Row className="mb-4">
                 <Col md={3}>
-                    <Form.Control type="text" placeholder="Buscar por título" />
+                    <Form.Control type="text" placeholder="Buscar por título" data-testid="search-input" />
                 </Col>
                 <Col md={3}>
-                    <Form.Control type="date" placeholder="Buscar por fecha" />
+                    <Form.Control type="date" placeholder="Buscar por fecha" data-testid="date-filter" />
                 </Col>
                 <Col md={3}>
-                    <Form.Control as="select">
+                    <Form.Control as="select" data-testid="status-filter">
                         <option value="">Estado</option>
                         <option value="open">Abierto</option>
                         <option value="filled">Contratado</option>
@@ -66,7 +66,7 @@ const Positions: React.FC = () => {
                     </Form.Control>
                 </Col>
                 <Col md={3}>
-                    <Form.Control as="select">
+                    <Form.Control as="select" data-testid="manager-filter">
                         <option value="">Manager</option>
                         <option value="john_doe">John Doe</option>
                         <option value="jane_smith">Jane Smith</option>
@@ -74,10 +74,10 @@ const Positions: React.FC = () => {
                     </Form.Control>
                 </Col>
             </Row>
-            <Row>
+            <Row data-testid="positions-list">
                 {positions.map((position, index) => (
                     <Col md={4} key={index} className="mb-4">
-                        <Card className="shadow-sm">
+                        <Card className="shadow-sm" data-testid={`position-card-${position.id}`}>
                             <Card.Body>
                                 <Card.Title>{position.title}</Card.Title>
                                 <Card.Text>
@@ -88,8 +88,8 @@ const Positions: React.FC = () => {
                                     {position.status}
                                 </span>
                                 <div className="d-flex justify-content-between mt-3">
-                                    <Button variant="primary" onClick={() => navigate(`/positions/${position.id}`)}>Ver proceso</Button>
-                                    <Button variant="secondary">Editar</Button>
+                                    <Button variant="primary" onClick={() => navigate(`/positions/${position.id}`)} data-testid="view-process-btn">Ver proceso</Button>
+                                    <Button variant="secondary" data-testid="edit-position-btn">Editar</Button>
                                 </div>
                             </Card.Body>
                         </Card>

@@ -188,6 +188,34 @@ class PositionDetailsPage {
   shouldHandleApiSuccess() {
     this.elements.successMessage().should('be.visible')
   }
+
+  // Métodos para validación del tablero Kanban
+  shouldShowPositionTitle(expectedTitle) {
+    cy.get('[data-testid="position-title"]').should('contain', expectedTitle)
+  }
+
+  shouldShowAllStages(expectedStages) {
+    expectedStages.forEach((stageName, index) => {
+      cy.get(`[data-testid="stage-${index}"]`).should('contain', stageName)
+    })
+  }
+
+  shouldShowCandidateInStage(candidateName, stageIndex) {
+    cy.get(`[data-testid="stage-${stageIndex}"]`)
+      .find('[data-testid="candidate-card"]')
+      .should('contain', candidateName)
+  }
+
+  dragCandidateToStage(candidateName, fromStageIndex, toStageIndex) {
+    // Simular drag & drop usando el nombre del candidato
+    cy.get(`[data-testid="stage-${fromStageIndex}"]`)
+      .find(`[data-testid="candidate-card"]:contains("${candidateName}")`)
+      .trigger('mousedown', { button: 0 })
+      .trigger('mousemove', { clientX: 100, clientY: 100 })
+      .get(`[data-testid="stage-${toStageIndex}"]`)
+      .trigger('mouseover')
+      .trigger('mouseup')
+  }
 }
 
 export default new PositionDetailsPage()
