@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "description": "Flujo estándar para posiciones técnicas",
+    "interviewSteps": [
+      {
+        "id": 1,
+        "name": "Primera Entrevista",
+        "orderIndex": 1,
+        "interviewTypeId": 1
+      },
+      {
+        "id": 2,
+        "name": "Prueba Técnica",
+        "orderIndex": 2,
+        "interviewTypeId": 2
+      },
+      {
+        "id": 3,
+        "name": "Segunda Entrevista",
+        "orderIndex": 3,
+        "interviewTypeId": 1
+      },
+      {
+        "id": 4,
+        "name": "Entrevista Final",
+        "orderIndex": 4,
+        "interviewTypeId": 3
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "description": "Flujo para posiciones de diseño",
+    "interviewSteps": [
+      {
+        "id": 5,
+        "name": "Revisión de Portafolio",
+        "orderIndex": 1,
+        "interviewTypeId": 4
+      },
+      {
+        "id": 6,
+        "name": "Entrevista de Diseño",
+        "orderIndex": 2,
+        "interviewTypeId": 1
+      },
+      {
+        "id": 7,
+        "name": "Prueba Práctica",
+        "orderIndex": 3,
+        "interviewTypeId": 5
+      },
+      {
+        "id": 8,
+        "name": "Entrevista Final",
+        "orderIndex": 4,
+        "interviewTypeId": 3
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "description": "Flujo para posiciones DevOps",
+    "interviewSteps": [
+      {
+        "id": 9,
+        "name": "Entrevista Técnica",
+        "orderIndex": 1,
+        "interviewTypeId": 1
+      },
+      {
+        "id": 10,
+        "name": "Prueba Práctica de Infraestructura",
+        "orderIndex": 2,
+        "interviewTypeId": 6
+      },
+      {
+        "id": 11,
+        "name": "Entrevista con Equipo",
+        "orderIndex": 3,
+        "interviewTypeId": 7
+      },
+      {
+        "id": 12,
+        "name": "Entrevista Final",
+        "orderIndex": 4,
+        "interviewTypeId": 3
+      }
+    ]
+  }
+]
